@@ -23,13 +23,6 @@ app.post('/api/users', (req, res) => {
 });
 
 
-/*db.list().then(keys => {
-  for (let ix = 0; ix < keys.length; ix++) {
-    db.delete(keys[ix]).then(r => {
-    })
-  }
-});*/
-
 app.get('/api/users', (req, res) => {
   let users = []
   db.list().then(keys => {
